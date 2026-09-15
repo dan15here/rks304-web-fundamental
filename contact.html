@@ -27,7 +27,9 @@
         </section>
 
         <section class="contact-card">
-            <form action="#" method="POST" class="contact-formt">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="5ccedc0c-5f29-4ae6-a29c-2af3af728f8b">
+                
 
                 <div class="form-group">
                     <label for="full-name">Full Name</label>
@@ -53,7 +55,8 @@
                     <label for="message">Message</label>
                     <textarea name="message" id="message" rows="5" placeholder="Write your messages here..." required></textarea>
                 </div>
-
+                
+                <div class="h-captcha" data-captcha="true"></div>
                 <button type="submit" class="submit-btn">Send Message</button>
             </form>
         </section>
@@ -69,6 +72,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>
