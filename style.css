@@ -246,11 +246,13 @@ footer{
   margin-bottom: 3rem;
 }
 
+.contact-hero h1,
 .portfolio-hero h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
+.contact-hero p,
 .portfolio-hero p {
   opacity: 0.8;
   font-size: 1.1rem;
@@ -299,4 +301,80 @@ footer{
   border: 0;
 }
 
-.page
+.contact-card {
+  max-width: 650px;
+  margin: 0 auto 50px auto;
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.408);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 24px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30 px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.form-group label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: rgba(18, 18, 18, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: white;
+}
+
+.form-group select option {
+  background-color: #121212;
+  color: white;
+}
+
+.submit-btn {
+  padding: 14px 24px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 24px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #cccccc;
+}
+
+.submit-btn:active {
+  transform: scale(1);
+}
