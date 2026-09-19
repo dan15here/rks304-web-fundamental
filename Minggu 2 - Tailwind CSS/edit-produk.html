@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Produk - My E-Commerce</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col bg-gray-100 text-gray-800">
+  <header class="w-full bg-indigo-600 text-white px-6 py-4 shadow flex items-center justify-between">
+    <h1 class="text-4xl">My E-Commerce</h1>
+    <a href="index.html" class="text-sm font-medium bg-indigo-700 hover:bg-indigo-800 px-3 py-1.5 rounded-md transition">Logout</a>
+  </header>
+  <div class="flex flex-1">
+    <aside class="w-64 bg-white p-4 border-r border-gray-200">
+      <nav class="space-y-1">
+        <a href="dashboard.html" class="block px-3 py-2 text-gray-600 hover:bg-gray-100 font-medium rounded-md">Dashboard</a>
+        <a href="products.html" class="block px-3 py-2 text-white bg-blue-500 font-medium rounded-md">Products</a>
+        <a href="#" class="block px-3 py-2 text-gray-600 hover:bg-gray-100 font-medium rounded-md">Users</a>
+        <a href="#" class="block px-3 py-2 text-gray-600 hover:bg-gray-100 font-medium rounded-md">Setting</a>
+      </nav>
+    </aside>
+    <main class="flex-1 p-6">
+      <section class="max-w-2xl bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Edit Produk</h2>
+        <form action="products.html" class="space-y-5">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+            <input type="text" id="name" name="name" value="Wireless Headphones" required class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          </div>
+          <div>
+            <label for="stock" class="block text-sm font-medium text-gray-700 mb-1">Stock</label>
+            <input type="number" id="stock" name="stock" value="45" min="0" required class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          </div>
+          <div>
+            <label for="description" class="block text-sm font-medium text-gray-700 mb-1">Description</label>
+            <textarea id="description" name="description" rows="4" required class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">Headphones nirkabel dengan kualitas suara jernih.</textarea>
+          </div>
+          <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-medium px-5 py-2 rounded-md transition">Submit</button>
+        </form>
+      </section>
+    </main>
+  </div>
+  <footer class="bg-white border-t border-gray-200 text-center text-sm text-gray-500 py-4">&copy; 2026 Muhammad Danish. All rights reserved.</footer>
+</body>
+</html>
