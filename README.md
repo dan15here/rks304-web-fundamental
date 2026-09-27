@@ -24,8 +24,8 @@ Setiap tugas disimpan dalam folder berdasarkan minggu perkuliahan:
 | Minggu | Materi / Tugas | Status |
 |--------|----------------|--------|
 | 1 | Personal Portfolio dengan HTML dan Vanilla CSS | Selesai |
-| 2 | - | Belum dikerjakan |
-| 3 | - | Belum dikerjakan |
+| 2 | Belajar menggunakan Tailwind CSS | Selesai |
+| 3 | Membuat form registrasi dengan validasi input menggunaakan Javascript | Selesai |
 
 Daftar ini akan diperbarui seiring bertambahnya tugas.
 
