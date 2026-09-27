@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Registrasi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen py-10">
+    <main class="flex-grow flex items-center justify-center py-10 px-4">
+        <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+            <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Buat Akun</h2>
+        
+            <!-- Form mengarah ke dashboard.html -->
+            <form id="registrationform" action="dashboard.html" method="GET" class="space-y-4" novalidate>
+                <!-- Username -->
+                <div class>
+                    <label for="username" class="block text-sm font-medium text-gray-700">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Input Username anda" required
+                           class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                    <p id="err-username" class="text-red-500 text-xs mt-1 hidden"></p>
+                    </div>
+    
+                <!-- Password -->
+                <div>
+                    <label for="password" class="block text-sm font-medium text-gray-700">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Minimal 8 karakter "
+                        class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                    <p id="err-password" class="text-red-500 text-xs mt-1 hidden"></p>
+                </div>
+                
+                <!-- Nama -->
+                <div>
+                    <label for="nama" class="block text-sm font-medium text-gray-700">Nama:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda"
+                        class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                    <p id="err-nama" class="text-red-500 text-xs mt-1 hidden"></p>    
+                </div>
+    
+                <!-- Tanggal lahir-->
+                <div>
+                    <label for="tgl_lahir" class="block text-sm font-medium text-gray-700">Tanggal Lahir:</label>
+                    <input type="date" id="tgl_lahir" name="tgl_lahir"
+                        class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                     <p id="err-tgl_lahir" class="text-red-500 text-xs mt-1 hidden"></p>
+                </div>
+    
+                <!-- Alamat -->
+                <div>
+                    <label for="alamat" class="block text-sm font-medium text-gray-700">Alamat:</label>
+                    <input type="text" id="alamat" name="alamat" rows="3" placeholder="Tempat anda tinggal"
+                        class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                        <p id="err-alamat" class="text-red-500 text-xs mt-1 hidden"></p>
+                </div>
+    
+                <!-- No Telepon -->
+                <div>
+                    <label for="telepon" class="block text-sm font-medium text-gray-700">Nomor Telepon:</label>
+                    <input type="number" id="telepon" name="telepon" placeholder="Contoh: 628123456789"
+                        class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                        <p id="err-telepon" class="text-red-500 text-xs mt-1 hidden"></p>
+                </div>
+            
+                <!-- Tombol -->
+                <div>
+                    <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-md shadow focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        Daftar
+                    </button>
+                </div>
+        </form>
+        </div>
+    </main>
+
+    <footer class="border-t border-gray-200 text-center py-4 text-gray-500">
+    &copy; 2026 Muhammad Danish. All rights reserved.
+    </footer>
+
+    <script src="validasi_input.js"></script>
+</body>
+</html>
