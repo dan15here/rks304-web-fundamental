@@ -17,7 +17,7 @@ document.getElementById('registrationform').addEventListener('submit', function(
   const errAlamat = document.getElementById('err-alamat');
   const errTelepon = document.getElementById('err-telepon');
 
-  // Helprt function untuk mereset dan menampilkan error
+  // Helper function untuk mereset dan menampilkan error
   function showError(element, errorElement, message) {
     errorElement.textContent = message;
     errorElement.classList.remove('hidden');
